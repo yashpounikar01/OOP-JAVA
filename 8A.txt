@@ -1,0 +1,9 @@
+public class UncheckedExceptionExample {
+    public static void main(String[] args) {
+        try {
+            throw new ArithmeticException("Unchecked Exception Example");
+        } catch (ArithmeticException e) {
+            System.out.println("Caught Unchecked Exception: " + e.getMessage());
+        }
+    }
+}

@@ -1,0 +1,7 @@
+public class ReverseStringExample {
+    public static void main(String[] args) {
+        String inputString = "Hello, World!";
+        System.out.println("Original: " + inputString);
+        System.out.println("Reversed: " + new StringBuffer(inputString).reverse());
+    }
+}

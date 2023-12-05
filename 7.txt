@@ -1,0 +1,25 @@
+interface FirstInterface {
+    void methodOne();
+}
+
+interface SecondInterface {
+    void methodTwo();
+}
+
+class MultipleInheritanceClass implements FirstInterface, SecondInterface {
+    @Override
+    public void methodOne() {
+        System.out.println("Implementing methodOne()");
+    }
+
+    @Override
+    public void methodTwo() {
+        System.out.println("Implementing methodTwo()");
+    }
+
+    public static void main(String[] args) {
+        MultipleInheritanceClass obj = new MultipleInheritanceClass();
+        obj.methodOne();
+        obj.methodTwo();
+    }
+}

@@ -1,0 +1,11 @@
+import java.io.IOException;
+
+public class CheckedExceptionExample {
+    public static void main(String[] args) {
+        try {
+            throw new IOException("Checked Exception Example");
+        } catch (IOException e) {
+            System.out.println("Caught Checked Exception: " + e.getMessage());
+        }
+    }
+}

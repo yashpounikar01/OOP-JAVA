@@ -1,0 +1,27 @@
+abstract class Bank {
+    public abstract double getROI();
+}
+
+class SBI extends Bank {
+    @Override
+    public double getROI() {
+        return 7.5;
+    }
+}
+
+class PNB extends Bank {
+    @Override
+    public double getROI() {
+        return 8.0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bank sbi = new SBI();
+        Bank pnb = new PNB();
+
+        System.out.println("SBI ROI: " + sbi.getROI() + "%");
+        System.out.println("PNB ROI: " + pnb.getROI() + "%");
+    }
+}

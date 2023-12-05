@@ -1,0 +1,19 @@
+abstract class Bike
+{
+  public abstract void run ();
+} 
+
+class Honda extends Bike
+{
+  @Override public void run ()
+  {
+    System.out.println ("Honda is running safely");
+}} 
+ 
+public class Main
+
+{
+  public static void main (String[]args)
+  {
+    new Honda ().run ();
+}} 
